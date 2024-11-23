@@ -1,4 +1,1 @@
-```
-```
-
 # About Entity Definitions
