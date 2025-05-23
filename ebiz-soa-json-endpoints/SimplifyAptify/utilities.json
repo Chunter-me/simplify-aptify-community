@@ -1,0 +1,27 @@
+{
+  "InputFields": {
+    "PostContent": {
+      "fields": {
+        "PostContent": {
+          "type": "string",
+          "input": {
+            "httpMethods": [ "POST" ],
+            "source": "body"
+          }
+        }
+      }
+    }
+  },
+
+  "BusinessLogic": {
+    "EndpointDataQuery": {
+      "executionType": "processFlow",
+      "processFlowProperties": {
+        "processFlowName": "Data Query Endpoint Component_sa",
+        "processFlowParameters": {
+          "AuthenticatedPrincipalRecordId": "@AuthenticatedAttributes.AuthenticatedPrincipalRecordId"
+        }
+      }
+    }
+  }
+}

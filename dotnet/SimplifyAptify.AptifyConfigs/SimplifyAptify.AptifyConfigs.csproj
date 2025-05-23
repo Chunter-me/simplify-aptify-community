@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyVersion>0.0.0.1</AssemblyVersion>
+    <!-- AptifyMajor.AptifyMin.OrgMajor.OrgMinor-->
+    <FileVersion>7.0.0.1</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PerByte.Rexies" Version="1.0.2" />
+    <PackageReference Include="PerByte.Rexies.AptifyBits" Version="1.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AptifyApplication">
+      <HintPath>..\Libs\AptifyApplication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyAttributeManagement">
+      <HintPath>..\Libs\AptifyAttributeManagement.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyExceptionManagement">
+      <HintPath>..\Libs\AptifyExceptionManagement.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyExceptionManagementInterfaces">
+      <HintPath>..\Libs\AptifyExceptionManagementInterfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyGenericDataServices">
+      <HintPath>..\Libs\AptifyGenericDataServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyGenericEntity">
+      <HintPath>..\Libs\AptifyGenericEntity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyGenericEntityBase">
+      <HintPath>..\Libs\AptifyGenericEntityBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyProcessFlowEngine">
+      <HintPath>..\Libs\AptifyProcessFlowEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyUtility">
+      <HintPath>..\Libs\AptifyUtility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="IAptifyDataServices">
+      <HintPath>..\Libs\IAptifyDataServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>..\Libs\Microsoft.Extensions.Logging.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\Libs\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Libs\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
