@@ -1,0 +1,44 @@
+[
+  {
+    "date": "10/06/2024",
+    "title": "Initial Idea Started",
+    "version": "0.0.1",
+    "content": "The initial idea was to create a web component built with Vue.js without a shadow root.\nThis form component would act as a Summary Form.\n      "
+  },
+  {
+    "date": "11/06/2024",
+    "title": "Demo to PACT",
+    "version": "0.0.2",
+    "content": "Did a live demo to the Aptify Product Advisory Collaboration Team.\nBut in the days leading up was running into deployment issues, getting the component to work in Aptify Web correctly.\n\nA change needed to be made.\n      "
+  },
+  {
+    "date": "11/08/2024",
+    "title": "Nuxt Application",
+    "version": "0.1.0",
+    "content": "After getting fed up with the issues, and being inspired by [dbdocs.io](https://dbdocs.io){:target=\"_blank\"}, decided to for go the Form Component and do a Static Generated App that could live inside the Aptify Web client folder.\nThis would allow all the same benefits of being able to use the Aptify Web SOA and give me 100% full freedom on tech, packages and UI/UX.\n\nWent back to my personal favorite [Nuxt.js](https://nuxt.com){:target=\"_blank\"}. Added in [Tailwind](https://tailwindcss.com){:target=\"_blank\"} (of course), added in [PrimeVue](https://primevue.org){:target=\"_blank\"} component library and their new Aura theme, and we were off to the races."
+  },
+  {
+    "date": "11/16/2024",
+    "title": "Production Test Worked!",
+    "version": "0.2.0",
+    "content": "Finally did a proper build of the application and dropped it in with Aptify Web and it worked!"
+  },
+  {
+    "date": "5/1/2025",
+    "title": "Full Re-Build!",
+    "version": "0.3.0",
+    "content": "Err... So I did file new on the entire project, LOL! Nuxt has had a bunch of updates, Tailwind v4 released switched from PrimeVue to Nuxt UI.\nNuxt UI + Tailwind v4 is my newer setup, and really really loving the combo. As well wanted to update with a bunch of new learnings."
+  },
+  {
+    "date": "7/2/2025",
+    "title": "Process Pipeline",
+    "version": "0.4.0",
+    "content": "Not sure why I didn't think of it from the beginning. Added new section for the Process Pipeline that includes the Event Handlers, their definitions and full process flow details to the entity."
+  },
+  {
+    "date": "8/2/2025",
+    "title": "Nuxt v4!",
+    "version": "0.5.0",
+    "content": "Nuxt v4 was officially released on July 15, 2025 and I had to upgrade. I've been using the compatibility mode since they added it so did a full upgrade/update of all packages :D."
+  }
+]
