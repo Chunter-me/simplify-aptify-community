@@ -1,10 +1,14 @@
-# 1 - Build Image
+# Run Aptify DB Through Docker SQL Server
+
+NOTE: This is meant for Development only it has in no way been considered or tested for test/prod scenarios.
+
+## 1 - Build Image
 
 ```powershell
 docker build -t <AccountName>:latest D:\Repos\simplify-aptify\docker\mssql-<linux|windows>
 ```
 
-# 2 - Create Container
+## 2 - Create Container
 
 ```powershell
 # Linux
@@ -14,12 +18,12 @@ docker run --name {CONTAINERNAME} --memory=2500m -e "ACCEPT_EULA=Y" -e "SA_PASSW
 docker run --name {CONTAINERNAME} --env sa_password={SAPASSWORDGOESHERE} -p 8010:1433 --mount type=bind,source={WINDOWSFOLDERPATH},destination=c:\Data\ -d <AccountName>:latest
 ```
 
-# 3 - Setup Database
+## 3 - Setup Database
 
 - Put your back or DB files in your Volume folder your specified in the container create command.
 - Open favorite SQL client and restore/attach your database
 
-# 3 - Set Aptify Enable CLR and Trustworthy
+## 4 - Set Aptify Enable CLR and Trustworthy
 
 ```sql
 USE APTIFY;
