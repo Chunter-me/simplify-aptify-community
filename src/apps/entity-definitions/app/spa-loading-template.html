@@ -1,0 +1,113 @@
+<style>
+  html, body, #__nuxt {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    font-family: 'Open Sans', sans-serif !important;
+
+    background-color: #18181b !important;
+    color: #e5e7eb !important;
+  }
+
+  .loading-wrapper {
+    position: fixed;
+    background: rgba(34, 34, 34, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9000;
+  }
+
+  .loading-spinner {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db; /* Blue */
+    -webkit-animation: loading-spinner-spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: loading-spinner-spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    z-index: 9009;
+  }
+
+  .loading-spinner:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c; /* Red */
+    -webkit-animation: loading-spinner-spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: loading-spinner-spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
+
+  .loading-spinner:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f9c922; /* Yellow */
+    -webkit-animation: loading-spinner-spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: loading-spinner-spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
+
+  @-webkit-keyframes loading-spinner-spin {
+    0% {
+        -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg); /* IE 9 */
+        transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg); /* IE 9 */
+        transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+    }
+  }
+
+  @keyframes loading-spinner-spin {
+    0% {
+        -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg); /* IE 9 */
+        transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg); /* IE 9 */
+        transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+    }
+  }
+
+  .loading-message {
+    max-width: 80%;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 22px;
+    z-index: 9009;
+  }
+</style>
+
+<main class="loading-wrapper">
+  <div class="loading-spinner"></div>
+  <div class="loading-message">
+    Loading Entity Definitions
+  </div>
+</main>

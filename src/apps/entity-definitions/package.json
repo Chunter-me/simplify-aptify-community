@@ -1,0 +1,36 @@
+{
+  "name": "aptify-entity-definitions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt generate && rimraf .output/public/Aptify",
+    "dev": "nuxt dev --dotenv .env.dev",
+    "dev-aptify": "nuxt dev --dotenv .env.dev-aptify"
+  },
+  "dependencies": {
+    "@dagrejs/dagre": "^1.1.5",
+    "@nuxt/fonts": "0.11.2",
+    "@nuxt/icon": "1.12.0",
+    "@nuxt/image": "1.10.0",
+    "@nuxt/ui": "3.1.0",
+    "@nuxtjs/mdc": "0.17.0",
+    "@vueuse/components": "^13.1.0",
+    "@vueuse/core": "^13.1.0",
+    "@vueuse/nuxt": "^13.1.0",
+    "mermaid": "^11.9.0",
+    "nuxt": "^4.0.2",
+    "shiki": "^3.3.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1",
+    "xml-formatter": "^3.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/vite": "^4.1.5",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^4.1.5",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@10.14.0"
+}

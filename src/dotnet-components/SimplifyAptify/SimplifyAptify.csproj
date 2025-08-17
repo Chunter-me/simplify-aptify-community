@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{093C4F6C-CC2C-4673-A194-0C955F895913}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimplifyAptify</RootNamespace>
+    <AssemblyName>SimplifyAptify</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AptifyApplication, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f3fa0ecabf9514d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\AptifyApplication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyAttributeManagement, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f3fa0ecabf9514d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\AptifyAttributeManagement.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyExceptionManagement, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f3fa0ecabf9514d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\AptifyExceptionManagement.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyExceptionManagementInterfaces, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f3fa0ecabf9514d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\AptifyExceptionManagementInterfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyGenericDataServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f3fa0ecabf9514d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\AptifyGenericDataServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyGenericEntity">
+      <HintPath>..\..\..\libs\Aptify\AptifyGenericEntity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyGenericEntityBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f3fa0ecabf9514d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\AptifyGenericEntityBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyProcessFlowEngine">
+      <HintPath>..\..\..\libs\Aptify\AptifyProcessFlowEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyProcessFlowUtilities">
+      <HintPath>..\..\..\libs\Aptify\AptifyProcessFlowUtilities.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AptifyUtility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f3fa0ecabf9514d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\AptifyUtility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="IAptifyDataServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f3fa0ecabf9514d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\IAptifyDataServices.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Metadata, Version=7.0.0.0, Culture=neutral, PublicKeyToken=f3fa0ecabf9514d9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\Metadata.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\libs\Aptify\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\EntityDefinition\EntityDefinitionEntityPlugIn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SOA\EndpointProcessComponents\" />
+    <Folder Include="SOA\ServiceControllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Clients\README.md" />
+    <None Include="Entities\README.md" />
+    <None Include="Extensions\README.md" />
+    <None Include="Merchants\README.md" />
+    <None Include="Messaging\README.md" />
+    <None Include="ProcesComponents\README.md" />
+    <None Include="SOA\README.md" />
+    <None Include="Utilities\README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

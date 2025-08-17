@@ -1,1 +1,1 @@
-# TODO
+# Aptify Entity Definitions

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aptify HTML5 Web</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+  <style>
+    * {
+      outline: 0 none;
+    }
+
+    html, body, main {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    figure {
+      margin: 0 auto;
+      height: 145px;
+    }
+
+    img {
+      height: 73px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 26px 18px;
+      border: 1px solid #d8dde6;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      text-align: left !important;
+    }
+
+    label {
+      font-weight: bold;
+      color: #54698d;
+      font-size: 12px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    input, select {
+      border: 1px solid #cccccc;
+      line-height: 1.4;
+    }
+
+    select {
+      width: 100%;
+      display: block;
+      padding: 12px;
+      font-size: 14px;
+      background-color: #f3f3f3;
+    }
+
+    input[type=text], input[type=password] {
+      width: 93%;
+      padding: 8px 12px;
+      font-size: 14px;
+      border: 1px solid #cccccc;
+      line-height: 1.4;
+    }
+
+    button {
+      background-color: #0070d2;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      padding: 9px 15px;
+      color: #fff;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 420px;
+      padding: 50px 4px 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .error {
+      display: none;
+      color: #c23934;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="grid">
+    <section style="background-color: #f4f6f9;">
+      <div class="login-box">
+        <figure>
+          <img src="https://www.aptify.com/wp-content/uploads/2020/07/cb-aptify-logo-c-rgb-bycb.svg" alt="" />
+        </figure>
+
+        <form>
+          <div id="error" class="error">
+            Your username or password is not correct.
+          </div>
+
+          <select>
+            <option value="Domain">Domain</option>
+          </select>
+
+          <div>
+            <label for="username" style="font-weight: bold;">
+              USERNAME
+            </label>
+            <input type="text" id="username">
+          </div>
+
+          <div>
+            <label for="password" style="font-weight: bold;">
+              PASSWORD
+            </label>
+            <input type="password" id="password">
+          </div>
+
+          <button type="button" onclick="login()">
+            Sign In
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <iframe title="Aptify Ad" style="width:100%; height:100%; border: 0 none;" src="https://www.aptify.com/login-ad"></iframe>
+  </main>
+
+  <script type="text/javascript">
+    sessionStorage.removeItem('fakeAptifyLogin');
+
+    window.addEventListener('keydown', function(event) {
+      if (event.code == 'Enter') {
+        login();
+      }
+    });
+
+    const login = () => {
+      const divError = document.getElementById('error');
+      divError.style.display = 'none';
+
+      const username = document.getElementById('username')?.value ?? '';
+      const password = document.getElementById('password')?.value ?? '';
+
+      if (username != 'entity' && password != 'definitions') {
+        divError.style.display = 'block';
+        return;
+      }
+
+      sessionStorage.fakeAptifyLogin = true;
+      window.location.href = '/';
+    }
+  </script>
+</body>
+</html>
