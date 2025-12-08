@@ -6,7 +6,8 @@
   "scripts": {
     "build": "nuxt generate && rimraf .output/public/Aptify",
     "dev": "nuxt dev --dotenv .env.dev",
-    "dev-aptify": "nuxt dev --dotenv .env.dev-aptify"
+    "dev-aptify-token": "node env.dev-aptify.js",
+    "dev-aptify": "pnpm run dev-aptify-token && nuxt dev --dotenv .env.dev-aptify"
   },
   "dependencies": {
     "@dagrejs/dagre": "^1.1.5",
